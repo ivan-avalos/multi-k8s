@@ -1,7 +1,7 @@
 # Build!
 docker build -t avalos/multi-client:latest -t avalos/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t avalos/multi-server:latest -t avalos/multi-server:$SHA -f ./client/Dockerfile ./server
-docker build -t avalos/multi-worker:latest -t avalos/multi-worker:$SHA -f ./client/Dockerfile ./worker
+docker build -t avalos/multi-server:latest -t avalos/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t avalos/multi-worker:latest -t avalos/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 # Push!
 docker push avalos/multi-client:latest
